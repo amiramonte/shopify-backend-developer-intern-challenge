@@ -1,2 +1,2 @@
-DROP DATABASE IF EXISTS surboard_db;
-CREATE DATABASE surboard_db;
+DROP DATABASE IF EXISTS surfboard_db;
+CREATE DATABASE surfboard_db;
