@@ -4,7 +4,7 @@
         // 
     // build warehouse/location model 
         // location name and inventory for each one
-        // main warehouse and smaller surf shops 
+        // main warehouse and smaller surf shops - cities in San Diego,CA
 // 
     // index.js file
     // import models
