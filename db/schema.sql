@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS surboard_db;
+CREATE DATABASE surboard_db;
