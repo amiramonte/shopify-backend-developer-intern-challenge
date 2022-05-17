@@ -21,6 +21,10 @@ Surfboard.init(
         type: DataTypes.STRING,
         allowNull: false,
     },
+    fincount: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+    },
 
     },
     {

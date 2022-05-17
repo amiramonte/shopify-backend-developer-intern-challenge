@@ -2,7 +2,6 @@
 // 
 // Build Seed data
     // seed.js file
-        //  create surfboard seed data
         //  create warehouse seed data
         // set up main warehouse and then several surfshops that are cities in san diego,ca
         //  async await function to seed data
