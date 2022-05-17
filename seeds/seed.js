@@ -50,3 +50,17 @@ const surfboards = [
 ]
 
 // Location Seed Data
+const locations = [
+    {
+        locationname: "Distribution Center",
+    },
+    {
+        locationname: "Encinitas Surf Shop",
+    },
+    {
+        locationname: "Pacific Beach Surf Shop",
+    },
+    {
+        locationname: "Dana Point Surf Shop",
+    },
+];
