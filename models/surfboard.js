@@ -1,4 +1,4 @@
-const { Model, DataTypes} = require("sequelize");
+const {Model, DataTypes} = require("sequelize");
 const sequelize = require("../config/configuration");
 
 class Surfboard extends Model {}
