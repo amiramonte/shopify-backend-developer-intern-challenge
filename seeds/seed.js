@@ -10,6 +10,7 @@ const surfboards = [
         boardvolume: 25,
         boardtype: "short board",
         fincount: 3,
+        LocationId: 1,
     },
     {
         boardcompany: "Torq",
@@ -17,6 +18,7 @@ const surfboards = [
         boardvolume: 65,
         boardtype: "fun board",
         fincount: 3,
+        LocationId: 1,
     },
     {
         boardcompany: "Lost Surfboards",
@@ -24,6 +26,7 @@ const surfboards = [
         boardvolume: 28,
         boardtype: "short board",
         fincount: 5,
+        LocationId: 2,
     },
     {
         boardcompany: "Vissla",
@@ -31,6 +34,7 @@ const surfboards = [
         boardvolume: 100,
         boardtype: "long board",
         fincount: 1,
+        LocationId: 3,
     },
     {
         boardcompany: "Almond Surfboards",
@@ -38,6 +42,7 @@ const surfboards = [
         boardvolume: 45,
         boardtype: "fish",
         fincount: 2,
+        LocationId: 3,
     },
     {
         boardcompany: "Pyzel Surfboards",
@@ -45,6 +50,7 @@ const surfboards = [
         boardvolume: 75,
         boardtype: "fun board",
         fincount: 3,
+        LocationId: 4,
     },
 
 ]
@@ -67,8 +73,8 @@ const locations = [
 
 const seed = async () => {
     await sequelize.sync({ force: true });
-    await Surfboard.bulkCreate(surfboards);
     await Location.bulkCreate(locations);
+    await Surfboard.bulkCreate(surfboards);
     console.log("Seeding Successful!");
     process.exit(0);
 };
