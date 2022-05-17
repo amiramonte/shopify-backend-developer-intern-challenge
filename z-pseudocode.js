@@ -1,5 +1,4 @@
 // 
-// 
 // Build Seed data
     // seed.js file
         //  create warehouse seed data
