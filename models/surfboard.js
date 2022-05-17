@@ -5,15 +5,23 @@ class Surfboard extends Model {}
 
 Surfboard.init(
     {
-    board_type: {
+    boardcompany: {
         type: DataTypes.STRING,
         allowNull: false,
     },
-    board_length: {
+    boardlength: {
         type: DataTypes.INTEGER,
         allowNull: false,
     },
-    
+    boardvolume: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+    },
+    boardtype: {
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
+
     },
     {
     sequelize,

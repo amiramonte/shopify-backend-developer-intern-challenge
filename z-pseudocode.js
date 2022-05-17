@@ -1,7 +1,4 @@
 // Build Models
-    // build surfboard model with necessary information for each surfboard
-        // length, volume, manufacturer, location tied to
-        // 
     // build warehouse/location model 
         // location name and inventory for each one
         // main warehouse and smaller surf shops - cities in San Diego,CA
