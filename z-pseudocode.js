@@ -1,11 +1,16 @@
 // 
 // 
 // Controllers folder
-    // index.js file
-        // set up express router
-        // 
-    // api folder
-        // set up express router
-        // define api route variables for use - surfboards and warehouses/locations
-        // 
+    // location-routes.js
+        // GET all locations and associated surfboards
+        // GET single location and associated surfboards
+        // UPDATE single location and associated surfboards
+    // 
+    // surfboard-routes.js
+        // get all surfboards & associated location
+        // update surfboard
+        // CREATE surfboard
+        // DELETE surfboard
+    // 
+    // 
 // 
