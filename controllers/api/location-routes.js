@@ -20,5 +20,19 @@ router.get('/getlocations', async(req, res) => {
 });
 
 // GET route for single location and associated surfboards
+router.get('/getsinglelocation/:id', async(req, res) => {
+    try {
+        const singleLocation = await Location.findByPk(req.params.id, {
+            include: [Surfboard]
+        })
+        
+        res.status(200).json(singleLocation);
+
+    } catch (error) {
+        console.log(error);
+        res.status(400).json(error);
+    }
+});
+
 
 module.exports = router;
