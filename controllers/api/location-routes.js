@@ -17,6 +17,8 @@ router.get('/getlocations', async(req, res) => {
         console.log(error);
         res.status(400).json(error);
     }
-})
+});
+
+// GET route for single location and associated surfboards
 
 module.exports = router;
