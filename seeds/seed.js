@@ -64,3 +64,13 @@ const locations = [
         locationname: "Dana Point Surf Shop",
     },
 ];
+
+const seed = async () => {
+    await sequelize.sync({ force: true });
+    await Surfboard.bulkCreate(surfboards);
+    await Location.bulkCreate(locations);
+    console.log("Seeding Successful!");
+    process.exit(0);
+};
+
+seed();
