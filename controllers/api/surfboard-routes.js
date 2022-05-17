@@ -34,5 +34,29 @@ router.get('/getsinglesurfboard/:id', async(req, res) => {
     }
 });
 
+// CREATE (ADD) route for surfboard
+router.post("/addsurfboard", async (req, res) => {
+    try {
+        const newSurfboard = await Surfboard.create({
+        boardcompany: req.body.boardcompany,
+        boardlength: req.body.boardlength,
+        boardvolume: req.body.boardvolume,
+        boardtype: req.body.boardtype,
+        fincount: req.body.fincount,
+        LocationId: req.body.LocationId,
+    });
+        res.status(200).json(newSurfboard);
+    } catch (error) {
+        console.log(error);
+        res.status(400).json(error);
+    }
+});
+
+
+// UPDATE (EDIT) route for surfboard
+
+
+// DELETE route for surfboard
+
 
 module.exports = router;
