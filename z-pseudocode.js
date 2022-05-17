@@ -1,13 +1,4 @@
-// Build Models
-    // build warehouse/location model 
-        // location name and inventory for each one
-        // main warehouse and smaller surf shops - cities in San Diego,CA
 // 
-    // index.js file
-    // import models
-    // set up table associations for surfboards and warehouses/locations
-    // export models
-    // 
 // 
 // Build Seed data
     // seed.js file
@@ -15,6 +6,7 @@
         //  import sequelize connection
         //  create surfboard seed data
         //  create warehouse seed data
+        // set up main warehouse and then several surfshops that are cities in san diego,ca
         //  async await function to seed data
         //  
         //  
