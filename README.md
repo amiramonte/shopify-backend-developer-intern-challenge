@@ -65,7 +65,7 @@ Project is created with:
 ---
 
 ## Credits
-  
+
 #### Alex Miramontes - Jr. Web Developer
 
 [Github](https://www.github.com/amiramonte)
