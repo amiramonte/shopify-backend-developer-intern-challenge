@@ -54,7 +54,7 @@ Project is created with:
 1. Clone the repository from Github down to your local machine
 2. Open the repository in your preferred source code editor
 3. Navigate to your command line interface and enter `npm i` to install all dependencies
-4. Set up a .env file with login credentials for MySQL on your local machine
+4. Set up a `.env` file at the root level with your login credentials for MySQL on your local machine
 5. Access MySQL on your local machine through your command line interface by inputting `mysql -u root -p` and input your MySQL password when prompted
 6. Once in MySQL, input `source db/schema.sql` to set up the database on your local machine
 7. Type `quit` to exit MySQL
