@@ -11,11 +11,11 @@ router.get('/getallsurfboards', async(req, res) => {
             include: [Location]
         })
         
-        res.status(200).json(allSurfboards);
+        return res.status(200).json(allSurfboards);
 
     } catch (error) {
         console.log(error);
-        res.status(400).json(error);
+        return res.status(400).json(error);
     }
 });
 
@@ -26,11 +26,11 @@ router.get('/getsinglesurfboard/:id', async(req, res) => {
             include: [Location]
         })
         
-        res.status(200).json(singleSurfboard);
+        return res.status(200).json(singleSurfboard);
 
     } catch (error) {
         console.log(error);
-        res.status(400).json(error);
+        return res.status(400).json(error);
     }
 });
 
@@ -45,10 +45,10 @@ router.post("/addsurfboard", async (req, res) => {
         fincount: req.body.fincount,
         LocationId: req.body.LocationId,
     });
-        res.status(200).json(newSurfboard);
+        return res.status(200).json(newSurfboard);
     } catch (error) {
         console.log(error);
-        res.status(400).json(error);
+        return res.status(400).json(error);
     }
 });
 
@@ -70,6 +70,17 @@ router.put("/updatesurfboard/:id", async(req, res) => {
 
 
 // DELETE route for surfboard
-
+router.delete("/deletesurfboard/:id", async(req, res) => {
+    try {
+        const deletesurfboard = await Surfboard.destroy({
+        where: {
+            id: req.params.id,
+        },
+    });
+        return res.status(200).json(deletesurfboard);
+    } catch (error) {
+        return res.status(400).json(error);
+    }
+});
 
 module.exports = router;
