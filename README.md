@@ -13,7 +13,7 @@
 
 ## Description
 
-
+This is a simple inventory tracking web application. 
 
 ---
 
