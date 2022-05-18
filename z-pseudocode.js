@@ -6,7 +6,6 @@
     // 
     // surfboard-routes.js
         // update surfboard
-        // CREATE surfboard
         // DELETE surfboard
     // 
     // 

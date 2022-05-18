@@ -54,6 +54,19 @@ router.post("/addsurfboard", async (req, res) => {
 
 
 // UPDATE (EDIT) route for surfboard
+router.put("/updatesurfboard/:id", async(req, res) => {
+    try {
+        const updateSurfboard = await Surfboard.update(req.body, {
+        where: {
+            id: req.params.id,
+        },
+    });
+        return res.status(200).json(updateSurfboard);
+    } catch (error) {
+        console.log(error);
+        return res.status(400).json(error);
+    }
+});
 
 
 // DELETE route for surfboard
