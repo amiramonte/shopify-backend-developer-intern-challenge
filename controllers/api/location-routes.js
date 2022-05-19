@@ -35,4 +35,18 @@ router.get('/getsinglelocation/:id', async(req, res) => {
 });
 
 
+// CREATE (ADD) route for location
+router.post("/addlocation", async (req, res) => {
+    try {
+        const newLocation = await Location.create({
+        locationname: req.body.locationname,
+    });
+        return res.status(200).json(newLocation);
+    } catch (error) {
+        console.log(error);
+        return res.status(400).json(error);
+    }
+});
+
+
 module.exports = router;
