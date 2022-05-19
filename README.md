@@ -21,7 +21,7 @@ This is a simple inventory tracking web application.
 ## Functionality 
 
 
-![]()
+![API routes being successfully tested through Insomnia](./public/assets/shopify_backend_intern_challenge.gif)
 
 
 ---
