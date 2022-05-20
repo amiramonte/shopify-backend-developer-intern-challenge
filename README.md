@@ -5,7 +5,6 @@
 
 - [Description](#description)
 - [Functionality](#functionality)
-- [Deployed Application](#deployed-application)
 - [Technologies](#technologies)
 - [Installation](#installation)
 - [Credits](#credits)
@@ -14,7 +13,7 @@
 
 ## Description
 
-This is a simple inventory tracking web application. 
+This is the back end infastructure with API routes for an inventory tracking application. The API routes provide full CRUD functionality for inventory as well as the ability to add locations and assign inventory to new and existing locations. 
 
 ---
 
@@ -24,13 +23,6 @@ This is a simple inventory tracking web application.
 
 ![API routes being successfully tested through Insomnia](./public/assets/shopify_backend_intern_challenge.gif)
 
-
----
-
-
-## Deployed Application
-
-- []()
 
 ---
 
